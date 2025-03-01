@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russian Roulette</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; padding: 50px; }
+        button { font-size: 20px; padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Russian Roulette</h1>
+    <p>Click the button and test your luck. Win = Absolutely Nothing. Lose = ???.</p>
+    <button onclick="playGame()">Pull the Trigger</button>
+    <p id="result"></p>
+
+    <script>
+        function playGame() {
+            let chamber = Math.floor(Math.random() * (Math.floor(Math.random() * 10) + 1)); // 1 in 6 chance
+            if (chamber === 0) {
+                document.getElementById("result").innerText = "YAY YOU WON NOTHING!";
+                setTimeout(() => {
+                    window.open("https://www.pornhub.com", "_blank");
+                }, 2000);
+            } else {
+                document.getElementById("result").innerText = "yippee you won nothing!";
+            }
+        }
+    </script>
+</body>
+</html>
