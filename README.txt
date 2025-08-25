@@ -1,1 +1,2 @@
-this does have a chance to delete system_32 so be careful.
+Warning
+This does have a chance to take you to an explicit website.
